@@ -12,7 +12,7 @@
                 <i [classList]="item.icon"></i>
                 <span>{{item.text}}</span>
             </button> -->
-            <button [routerLink]="item.path" *ngIf="item.visible" class="flex flex-row flex-nowrap items-center justify-center gap-2 transition ease-in-out duration-500 w-64 h-12 rounded-lg font-medium bg-violet-100 hover:bg-violet-200 hover:text-violet-900 focus:outline-1 outline-violet-100">
+            <button routerLinkActive="text-violet-900" [routerLink]="item.path" *ngIf="item.visible" class="flex flex-row flex-nowrap items-center justify-center gap-2 transition ease-in-out duration-500 w-64 h-12 rounded-3xl font-medium bg-violet-100 hover:bg-violet-200 hover:text-violet-900 focus:outline-1 outline-violet-100">
                 <i [classList]="item.icon"></i>
                 <span>{{item.text}}</span>
             </button>
