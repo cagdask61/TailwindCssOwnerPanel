@@ -1,0 +1,27 @@
+<nav class="fixed -left-96 top-0 w-80 z-50 h-full bg-white shadow-2xl transition-all duration-1000" #sidebar>
+    <header class="text-center text-3xl font-bold mt-10">Sidebar</header>
+    <button (click)="close()"
+        class="absolute bg-white w-10 h-10 ml-10 flex justify-center items-center text-black rounded-full top-10 right-3 shadow-lg hover:outline outline-1 outline-violet-800">
+        <i class='bx bx-x bx-sm'></i>
+    </button>
+    <div class="h-full flex flex-col items-center flex-nowrap gap-5 mt-10">
+
+        <ng-container *ngFor="let item of sidebarMenuItems">
+            <!-- <button [routerLink]="item.path" routerLinkActive="bg-violet-700 text-white" *ngIf="item.visible"
+                class="bg-gray-200 hover:bg-violet-500 hover:text-white w-64 h-12 rounded-md font-medium transition ease-in-out duration-500 flex flex-row flex-nowrap items-center justify-center gap-2">
+                <i [classList]="item.icon"></i>
+                <span>{{item.text}}</span>
+            </button> -->
+            <button [routerLink]="item.path" *ngIf="item.visible" class="flex flex-row flex-nowrap items-center justify-center gap-2 transition ease-in-out duration-500 w-64 h-12 rounded-lg font-medium bg-violet-100 hover:bg-violet-200 hover:text-violet-900 focus:outline-1 outline-violet-100">
+                <i [classList]="item.icon"></i>
+                <span>{{item.text}}</span>
+            </button>
+        </ng-container>
+    </div>
+
+</nav>
+
+
+<main class="h-full w-full">
+    <ng-content></ng-content>
+</main>
