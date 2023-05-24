@@ -1,4 +1,4 @@
-import { Component, ElementRef, Renderer2, ViewChild, inject } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
 
 import { SidebarMenuItemModel } from 'src/app/models/environments/sidebar-menu-item.model';
@@ -14,7 +14,6 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrls: ['./sidebar.component.scss']
 })
 export default class SidebarComponent {
-  private readonly renderer: Renderer2 = inject(Renderer2);
 
   @ViewChild('sidebar') private readonly _sidebar: ElementRef<HTMLElement>;
 

@@ -1,8 +1,16 @@
 <h1 class="text-center font-bold text-5xl mt-5 mb-10">Form</h1>
-<form class="ml-10">
-    <div class="block">
-        <label for="name" class="block mb-2 font-medium">Name</label>
-        <input id="name" type="text" placeholder="Ex. Çağdaş" class="block w-80 h-10 px-3 rounded-sm outline-0 ring-violet-700 ring-1 hover:ring-2  transition-all duration-500" >
+<form class="grid grid-cols-1 gap-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+    <div>
+        <label for="default" class="block mb-2 font-medium">Name</label>
+        <input id="default" type="text" placeholder="Ex. Çağdaş"
+            class="w-80 h-10 px-3 rounded-sm outline-0 ring-1 ring-black">
     </div>
-    
+    <div>
+        <label for="shadow" class="block mb-2 font-medium">Name</label>
+        <input id="shadow" type="text" placeholder="Ex. Çağdaş"
+            class="w-80 h-10 px-3 rounded-sm outline-0 ring-1 ring-gray-500 focus:shadow-lg">
+    </div>
+
+
+
 </form>

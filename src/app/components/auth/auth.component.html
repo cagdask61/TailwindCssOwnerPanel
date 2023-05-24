@@ -1,26 +1,28 @@
+<img [src]="url" class="w-full h-full absolute object-cover -z-50">
 <div class="w-full h-full flex flex-nowrap justify-center items-center">
-    <form [formGroup]="loginForm" class="bg-white shadow-2xl w-96 h-80 flex flex-nowrap flex-col justify-center items-center gap-5 rounded last:pb-2">
-        <h1 class="block text-center font-bold text-2xl">Welcome</h1>
+    <form [formGroup]="loginForm"
+        class="backdrop-blur-md bg-white/20 shadow-2xl w-112 h-96 flex flex-nowrap flex-col justify-center items-center gap-7 rounded last:pb-1 border border-white/10">
+        <h1 class="block text-center font-medium text-2xl text-white">Welcome</h1>
         <div>
-            <label for="username" class="block mb-2 font-medium opacity-70">Username</label>
+            <label for="username" class="block mb-2 font-medium text-white">Username</label>
             <input formControlName="username" autocomplete="username" id="username" type="text"
-                class="font-medium block w-80 h-10 px-3 rounded-sm outline-0 ring-violet-300 ring-1 focus:ring-2 ease-in-out duration-300">
-                <span class="text-xs text-red-500 absolute" *ngIf="usernameIsError">
-                    Do not leave your username blank
-                </span>
+                class="bg-white/25 font-medium block w-80 h-10 px-3 rounded-sm outline-0 ring-1 ring-black focus:ring-white focus:ring-2 ">
+            <span class="text-xs text-red-500 absolute" *ngIf="usernameIsError">
+                Do not leave your username blank
+            </span>
         </div>
         <div>
-            <label for="password" class="block mb-2 font-medium opacity-70">Password</label>
+            <label for="password" class="block mb-2 font-medium text-white">Password</label>
             <input formControlName="password" autocomplete="current-password" id="password" type="password"
-                class="font-medium block w-80 h-10 px-3 rounded-sm outline-0 ring-violet-300 ring-1 focus:ring-2 ease-in-out duration-300">
-                <span class="text-xs text-red-500 absolute" *ngIf="passwordIsError">
-                    Do not leave your password blank
-                </span>
+                class="bg-white/25 font-medium block w-80 h-10 px-3 rounded-sm outline-0 ring-1 ring-black/80 focus:ring-white focus:ring-2">
+            <span class="text-xs text-red-500 absolute" *ngIf="passwordIsError">
+                Do not leave your password blank
+            </span>
         </div>
-        
+
         <button type="button" (click)="login()"
-            class="flex flex-row flex-nowrap items-center justify-center gap-2 ease-in-out duration-500 w-80 h-11 mt-2 rounded-lg font-medium bg-violet-100 hover:bg-violet-200 hover:text-violet-900 focus:outline-1 focus:outline-violet-100">
-            <i class='bx bx-log-in-circle text-lg' ></i>
+            class="flex flex-row flex-nowrap items-center justify-center gap-2 ease-in-out duration-300 w-56 h-11 mt-2 rounded-sm font-medium bg-black text-white">
+            <i class='bx bx-log-in-circle text-lg'></i>
             <span>Login</span>
         </button>
 

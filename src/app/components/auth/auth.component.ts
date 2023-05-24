@@ -1,7 +1,8 @@
 import { NgIf } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ImageService } from 'src/app/services/image.service';
 
 @Component({
   selector: 'app-auth',
@@ -14,9 +15,23 @@ import { Router } from '@angular/router';
     NgIf
   ]
 })
-export default class AuthComponent {
+export default class AuthComponent implements OnInit {
 
   private readonly router: Router = inject(Router);
+  private readonly imageService: ImageService = inject(ImageService);
+
+  private _url: string = "";
+  get url(): string {
+    return this._url;
+  }
+
+
+  ngOnInit(): void {
+    const urls = this.imageService.getAllUrls;
+    const randomNumber = Math.floor(Math.random() * 10);
+    this._url = urls[randomNumber];
+  }
+
 
   loginForm: FormGroup = new FormGroup({
     username: new FormControl('', [Validators.required]),
