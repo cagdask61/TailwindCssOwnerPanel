@@ -27,6 +27,7 @@ export default class SidebarComponent {
     { key: 'LISTBOX', text: 'ListBox', icon: 'bx bx-list-ul', path: 'listbox', visible: true },
     { key: 'AUTH', text: 'Auth', icon: 'bx bx-log-in', path: '/login', visible: true },
   ];
+  
   get sidebarMenuItems(): Array<SidebarMenuItemModel> {
     return this._sidebarMenuItems;
   }

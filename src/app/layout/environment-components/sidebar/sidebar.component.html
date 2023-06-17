@@ -5,7 +5,7 @@
         <i class='bx bx-x bx-sm'></i>
     </button>
     <hr class="mt-5">
-    <div class="h-full flex flex-col items-center flex-nowrap gap-5 mt-10">
+    <div class="h-full w-full overflow-y-auto flex flex-col items-center flex-nowrap gap-5 mt-5">
 
         <ng-container *ngFor="let item of sidebarMenuItems">
             <button routerLinkActive="text-violet-900" [routerLink]="item.path" *ngIf="item.visible"
@@ -19,5 +19,5 @@
 </nav>
 
 <main class="container mx-auto w-full h-full">
-    <ng-content></ng-content>
+    <ng-content />
 </main>
