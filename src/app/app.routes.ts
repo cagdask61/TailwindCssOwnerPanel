@@ -10,7 +10,6 @@ const APP_ROUTES: Routes = [
         path: 'panel', component: LayoutComponent, children: [
             { path: '', redirectTo: 'dashboard', pathMatch: "full" },
             { path: 'dashboard', loadComponent: () => import('./components/dashboard/dashboard.component') },
-            { path: 'products', loadComponent: () => import('./components/product/product.component') },
             { path: 'cards', loadComponent: () => import('./components/cards/cards.component') },
             { path: 'table', loadComponent: () => import('./components/table/table.component') },
             { path: 'buttons', loadComponent: () => import('./components/button/button.component') },

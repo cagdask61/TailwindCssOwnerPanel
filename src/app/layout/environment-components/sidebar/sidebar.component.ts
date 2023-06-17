@@ -19,7 +19,6 @@ export default class SidebarComponent {
 
   private _sidebarMenuItems: Array<SidebarMenuItemModel> = [
     { key: 'DASHBOARD', text: 'Dashboard', icon: 'bx bxs-dashboard', path: 'dashboard', visible: true },
-    { key: 'PRODUCTS', text: 'Products', icon: 'bx bx-purchase-tag', path: 'products', visible: true },
     { key: 'CARDS', text: 'Cards', icon: 'bx bx-card', path: 'cards', visible: true },
     { key: 'BUTTONS', text: 'Buttons', icon: 'bx bx-joystick-button', path: 'buttons', visible: true },
     { key: 'TABLE', text: 'Table', icon: 'bx bx-table', path: 'table', visible: true },

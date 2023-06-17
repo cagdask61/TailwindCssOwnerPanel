@@ -2,15 +2,59 @@
 <form class="grid grid-cols-1 gap-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
     <div>
         <label for="default" class="block mb-2 font-medium">Name</label>
-        <input id="default" type="text" placeholder="Ex. Çağdaş"
+        <input id="default" type="text" placeholder="Default"
             class="w-80 h-10 px-3 rounded-sm outline-0 ring-1 ring-black">
     </div>
     <div>
         <label for="shadow" class="block mb-2 font-medium">Name</label>
-        <input id="shadow" type="text" placeholder="Ex. Çağdaş"
+        <input id="shadow" type="text" placeholder="Shadow"
             class="w-80 h-10 px-3 rounded-sm outline-0 ring-1 ring-gray-500 focus:shadow-lg">
+    </div>
+    <div>
+        <label for="ringBlack" class="block mb-2 font-medium">Name</label>
+        <input id="ringBlack" type="text" placeholder="Ring Black"
+            class="w-80 h-10 px-3 rounded border border-black outline-0 focus:ring-4 ring-black/50 transition duration-300 ease-in-out">
+    </div>
+    <div>
+        <label for="ringBlack" class="block mb-2 font-medium">Name</label>
+        <input id="ringBlack" type="text" placeholder="Ring Sky"
+            class="w-80 h-10 px-3 rounded border border-sky-500 outline-0 focus:ring-4 ring-sky-500/50 transition duration-300 ease-in-out">
+    </div>
+    <div>
+        <label for="ringBlack" class="block mb-2 font-medium">Name</label>
+        <input id="ringBlack" type="text" placeholder="Ring Sky"
+            class="w-80 h-10 px-3 border border-sky-500 outline-0 focus:ring-4 ring-sky-500/50 transition duration-300 ease-in-out">
+    </div>
+    <div>
+        <label for="borderBottom" class="block mb-2 font-medium">Name</label>
+        <input id="borderBottom" type="text" placeholder="Border Bottom"
+            class="w-80 h-10 px-3 border-b border-sky-500 focus:border-b-2 outline-0 bg-sky-100/30 transition duration-300 ease-in-out">
     </div>
 
 
 
 </form>
+
+<div class="w-full h-full mt-10">
+    <div class="flex justify-center items-center">
+        <form class="w-104 h-auto px-2 py-10 shadow rounded flex flex-col items-center justify-center gap-y-5">
+            <h1 class="text-center font-bold text-2xl">Welcome To Back</h1>
+            <div>
+                <label for="email" class="block mb-2 font-medium">Email</label>
+                <input id="email" type="email" placeholder="Your Email"
+                    class="w-80 h-10 px-3 rounded border border-black outline-0 focus:ring-4 ring-black/50 transition duration-300 ease-in-out">
+            </div>
+            <div>
+                <label for="password" class="block mb-2 font-medium">Password</label>
+                <input id="password" type="password" placeholder="Your Password"
+                    class="w-80 h-10 px-3 rounded border border-black outline-0 focus:ring-4 ring-black/50 transition duration-300 ease-in-out">
+            </div>
+            <div class="flex justify-center">
+                <button
+                    class="flex flex-row flex-nowrap items-center justify-center gap-2 transition ease-in-out duration-500 w-22 h-10 rounded-3xl font-medium bg-black text-white focus:outline-1 focus:outline-black">
+                    <span>Login</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
