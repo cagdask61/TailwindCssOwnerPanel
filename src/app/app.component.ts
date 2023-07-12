@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -10,14 +10,8 @@ import { RouterOutlet } from '@angular/router';
     RouterOutlet
   ]
 })
-export default class AppComponent implements OnInit {
+export default class AppComponent {
 
-  ngOnInit(): void {
-    document.addEventListener('contextmenu', function (e) {
-      e.preventDefault();
-    });
-    document.addEventListener('keyup', (event) => {
-      event.preventDefault();
-    });
-  }
+
+
 }

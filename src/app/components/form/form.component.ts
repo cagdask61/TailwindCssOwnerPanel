@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [CommonModule],
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  styleUrls: ['./form.component.scss'],
+  imports: [],
 })
-export default class FormComponent {
-
-}
+export default class FormComponent { }
