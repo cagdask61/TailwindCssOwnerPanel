@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tailwindcssownerpanel": {
+      "hosting": {
+        "TailwindCssOwnerPanel": [
+          "tailwindcssownerpanel"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tailwindcssownerpanel"
+  }
+}

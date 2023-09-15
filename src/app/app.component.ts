@@ -12,6 +12,4 @@ import { RouterOutlet } from '@angular/router';
 })
 export default class AppComponent {
 
-
-
 }
