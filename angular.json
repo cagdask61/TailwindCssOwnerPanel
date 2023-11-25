@@ -43,8 +43,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "./node_modules/charts.css/dist/charts.min.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },

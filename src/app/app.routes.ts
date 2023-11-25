@@ -15,7 +15,6 @@ const APP_ROUTES: Routes = [
             { path: 'buttons', loadComponent: () => import('./components/button/button.component') },
             { path: 'form', loadComponent: () => import('./components/form/form.component') },
             { path: 'listbox', loadComponent: () => import('./components/listbox/listbox.component') },
-            { path: 'sidebar', loadComponent: () => import('./components/sidebar/sidebar.component') },
         ]
     }
 ];
