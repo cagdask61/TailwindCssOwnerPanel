@@ -25,6 +25,7 @@ export default class SidebarComponent {
     { key: 'FORM', text: 'Form', icon: 'bx bx-objects-horizontal-center', path: 'form', visible: true },
     { key: 'LISTBOX', text: 'ListBox', icon: 'bx bx-list-ul', path: 'listbox', visible: true },
     { key: 'AUTH', text: 'Auth', icon: 'bx bx-log-in', path: '/login', visible: true },
+    { key: 'SIDE_BAR', text: 'Sidebars', icon: 'bx bx-sidebar', path: 'sidebar', visible: true },
   ];
   
   get sidebarMenuItems(): Array<SidebarMenuItemModel> {
